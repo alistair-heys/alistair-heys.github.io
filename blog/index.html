@@ -1,0 +1,15 @@
+---
+layout: default
+title: Writing
+description: Notes on product strategy, pricing and growth in B2B SaaS.
+---
+<section class="page-head">
+  <p class="eyebrow">Writing</p>
+  <h1>Notes on product, pricing and growth.</h1>
+</section>
+
+{% if site.posts.size > 0 %}
+  {% include post-list.html posts=site.posts %}
+{% else %}
+  <p>First posts coming soon.</p>
+{% endif %}

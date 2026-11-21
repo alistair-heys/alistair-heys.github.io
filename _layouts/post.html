@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-header">
+    <a class="back" href="{{ '/blog/' | relative_url }}">&larr; All writing</a>
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="dek">{{ page.description }}</p>{% endif %}
+    <p class="meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %-d, %Y' }}</time>
+      &middot; {{ content | number_of_words | divided_by: 220 | plus: 1 }} min read
+    </p>
+  </header>
+  <div class="prose">
+    {{ content }}
+  </div>
+  <footer class="post-footer">
+    <p>Thoughts on this? <a href="{{ site.linkedin }}">Find me on LinkedIn</a> or <a href="mailto:{{ site.email }}">send me a note</a>.</p>
+  </footer>
+</article>

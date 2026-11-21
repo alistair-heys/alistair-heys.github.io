@@ -1,0 +1,37 @@
+title: Alistair Heys
+tagline: Product leadership for B2B SaaS
+description: >-
+  Alistair Heys is a B2B SaaS product leader who builds and leads commercially minded
+  product teams: strategy, pricing and packaging, and product-led growth.
+url: "https://alistairheys.com"
+baseurl: ""
+author:
+  name: Alistair Heys
+
+# Contact links (edit these)
+email: hello@alistairheys.com
+linkedin: https://www.linkedin.com/in/YOUR-HANDLE
+
+permalink: /blog/:year/:month/:title/
+timezone: America/Denver
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+feed:
+  path: /feed.xml
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
